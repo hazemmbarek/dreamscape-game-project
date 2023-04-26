@@ -10,7 +10,7 @@ void initennemi(enemie*e)
     e->spritesheet=IMG_Load("/home/tek/Desktop/222/Sans titredd-111111111111111111111111111111111111.png");
     e->frame=0;// l'ennemi commencera avec la première frame de sa spritesheet.
     e->direction=0; 
-    e->pos.x=535;//pos d'affichage en x
+    e->pos.x=600;//pos d'affichage en x
     e->pos.y=360;//pos d'affichage en y
     e->posframe.x=0;//pos sprite sheet init en 1ere pos en y
     e->posframe.y=250;//pos sprite sheet init en 1ere pos en y
@@ -107,7 +107,7 @@ printf("posx:%d\n",e-> pos.x);
 /********************************************BACKGROUND**************************************************************************************/
 void initialiser_imageBACK(image *imge) 
 {
-	imge->url="/home/tek/Desktop/testttt/wallpapersden.com_lakeside-hd-pixel-art_1920x1080.jpg";
+	imge->url="/home/tek/Desktop/wallpapersden.com_lakeside-hd-pixel-art_1920x1080.jpg";
 	imge->img=IMG_Load(imge->url);
 
 if (imge->img == NULL) {
